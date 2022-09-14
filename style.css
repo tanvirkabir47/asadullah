@@ -1,0 +1,491 @@
+@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'SolaimanLipi', Arial, sans-serif !important;
+}
+
+/* custom scroll bar */
+
+.scroll-up-btn{
+    position: fixed;
+    height: 42px;
+    width: 42px;
+    background: #10733D;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 5px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
+
+/* all similar content styling codes */
+.container{
+    padding: 20px 80px;
+}
+
+
+/* navbar styling */
+.navbar{
+    width: 100%;
+    z-index: 999;
+    padding: 30px 40px;
+    transition: all 0.3s ease;
+}
+.navbar .inner-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #707070;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.social-icon a{
+    color: #707070;
+    font-size: 20px;
+    padding: 0 7px;
+}
+
+
+/* menu btn styling */
+
+.menu-btn{
+    color: #707070;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*------Home section Start----*/
+
+
+.inner-home{
+    position: relative;
+}
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(15%, -50%);
+    color: #1A1818;
+}
+.inner-home img{
+    width: 100%;
+    height: 100%;
+}
+.banner-text h3{
+    font-size: 42px;
+    line-height: .3;
+}
+.banner-text h1{
+    font-size: 92px;
+    margin-left: 25px;
+}
+.banner-text p{
+    font-size: 18px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.banner-text h4{
+    font-size: 25px;
+    margin-left: 25px;
+}
+
+              /*--------About Section---------*/
+
+.inner-about{
+    overflow: hidden;
+}
+.child-about{
+    float: left;
+    margin: 5px;
+}
+.about-header{
+    width: 15%;
+    margin-left: 0;
+}
+.about-header h2{
+    color: #EBEBEB;
+    font-size: 78px;
+    font-weight: 800;
+    transform: rotate(-90deg);
+    margin-top: 55%;
+}
+.about-img{
+    width: 40%;
+}
+.about-img img{
+    width: 100%;
+}
+.about-text{
+    width: 40%;
+    margin-right: 0;
+}
+.about-text p{
+    font-size: 18px;
+    color: #707070;
+    margin: 60px 0;
+}
+.about-text a{
+    font-size: 18px;
+    color: #1D1D1D;
+}
+
+
+
+
+/*---------Services Section----------*/
+
+.inner-service{
+    overflow: hidden;
+}
+.service-item {
+    padding: 40px 0;
+}
+.child-service{
+    float: left;
+    width: 30%;
+    margin: 2%;
+}
+.service-1{
+    margin-left: 0;
+}
+.service-2{
+    margin-top: -50px;
+}
+.service-3{
+    margin-right: 0;
+    margin-top: -110px;
+}
+.service-header h2 {
+    color: #10733D;
+    font-size: 78px;
+    line-height: 1;
+}
+.service-header span{
+    margin-left: 5%;
+}
+
+.service-item h3{
+    font-size: 30px;
+    color: #1D1D1D;
+}
+.service-item p{
+    font-size: 18px;
+    color: #707070;
+    padding-bottom: 40px;
+}
+.service-item a{
+    font-size: 18px;
+    color: #1D1D1D;
+}
+
+.service-item img{
+    height: 35px;
+    width: 35px;
+    margin: 25px 0;
+    cursor: pointer;
+}
+
+
+/*----------------Pokasona Section-------------*/
+
+
+.container .heading{
+    font-size: 78px;
+    color: #8E8E8E;
+    text-align: center;
+    padding: 40px 0;
+}
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: 25px;
+}
+.container .box-container .box{
+    position: relative;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .box-container .box h3{
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.container .box-container .box img{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+    transition: .5s;
+}
+
+/*---------Books Section---------------*/
+
+#book{
+    padding: 100px 50px;
+}
+.inner-book{
+    overflow: hidden;
+    background-image: linear-gradient(to right, #FEEDD8 , #FEA79D);
+    border-radius: 25px;
+}
+.child-book{
+    float: left;
+    width: 46%;
+    margin: 2%;
+}
+.books-title{
+    margin-left: 0;
+}
+.books-title h2{
+    color: #10733D;
+    font-size: 78px;
+    line-height: 1;
+}
+.books-title span{
+    margin-left: 8%;
+}
+.books-title p{
+    color: #707070;
+    font-size: 18px;
+    margin: 40px 0;
+    margin-left: 8%;
+}
+.books-title a{
+    font-size: 18px;
+    font-weight: 800;
+    color: #1D1D1D;
+    margin-left: 8%;
+}
+.books-image{
+    margin-right: 0;
+}
+.books-image img{
+   width: 100%;
+   height: auto;
+}
+
+/*-------------Newspaper Start---------------*/
+
+#newspaper{
+    background: #EBEBEB;
+    overflow: hidden;
+    padding-bottom: 200px;
+}
+.child-newspaper{
+    float: left;
+    width: 46%;
+    margin: 2%;
+}
+.newspaper-title{
+    margin-left: 0;
+}
+.newspaper-text{
+    margin-right: 0;
+}
+.newspaper-title h2{
+    color: #10733D;
+    font-size: 78px;
+    line-height: 1;
+}
+.newspaper-title span{
+    margin-left: 8%;
+}
+.newspaper-text p{
+    color: #707070;
+    font-size: 18px;
+}
+.newspaper-images{
+    margin-top: -19%;
+}
+.inner-newspaper-img{
+    overflow: hidden;
+}
+.newspaper-item{
+    float: left;
+    width: 20%;
+    margin: 6%;
+}
+.newspaper-item a{
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    color: #1D1D1D;
+    padding: 30px 0;
+}
+
+.newspaper-item img:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+    transition: .5s;
+    cursor: pointer;
+}
+
+/*----------------Footer Start---------------*/
+
+#video-content{
+    overflow: hidden;
+    padding: 50px 0;
+}
+.child-video{
+    float: left;
+    width: 46%;
+    margin: 2%;
+}
+.video-text{
+    margin-left: 0;
+}
+.video-images{
+    margin-right: 0;
+}
+.video-text h2{
+    color: #8E8E8E;
+    font-size: 78px;
+    line-height: 1;
+}
+.video-text span{
+    margin-left: 8%;
+}
+.video-text p{
+    color: #707070;
+    font-size: 18px;
+    margin: 25px 0 25px 8%;
+}
+.video-text a{
+    font-size: 18px;
+    font-weight: 800;
+    color: #1D1D1D;
+    margin-left: 8%;
+}
+.feture-video img{
+    width: 100%;
+    border-radius: 10px;
+}
+.related-video img{
+    width: 31%;
+    margin: 1%;
+    border-radius: 10px;
+}
+.related-video .first{
+    margin-left: 0;
+}
+.related-video .last{
+    margin-right: 0;
+}
+.video-images img:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+/*----------------Footer Start---------------*/
+.footer{
+    background: #10733D;
+}
+.footer-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-title{
+    width: 50%;
+}
+.footer-title h4 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 400;
+}
+.footer-title h2 {
+    font-size: 76px;
+    color: #fff;
+    font-weight: 800;
+    line-height: .8;
+}
+.footer-title p {
+    font-size: 27px;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 30%;
+}
+.footer-menu li{
+    display: inline-block;
+}
+.footer-menu li a{
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.footer-end{
+    background: #1D1D1D;
+}
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5px;
+
+}
+.footer-text p{
+    color: #fff;
+    font-size: 16px;
+}
+.footer-text span{
+    font-weight: 800;
+}
+.footer-license p{
+    color: #fff;
+    font-size: 16px;
+}
+.footer-license span{
+    font-weight: 800;
+}

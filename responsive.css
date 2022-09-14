@@ -1,0 +1,339 @@
+/* responsive media query start */
+@media (max-width: 1104px) {
+    
+    .banner-text h1{
+        font-size: 70px;
+    }
+    .inner-home img{
+        width: 100%;
+    }
+    
+    .about-header h2{
+        font-size: 55px;
+    }
+    .about-text p{
+        margin: 10px auto;
+    }
+    .books-image img{
+        width: 128%;
+    }
+    .newspaper-images{
+        margin-top: -23%;
+    }
+    .video-text h2 {
+        font-size: 60px;
+    }
+    .video-text p {
+        text-align: justify;
+    }
+
+}
+
+
+@media (max-width: 991px){
+    .banner-text h1{
+        font-size: 60px;
+    }
+    .newspaper-title h2{
+        font-size: 60px;
+    }
+    .newspaper-item {
+        float: left;
+        width: 50%;
+        margin: 0;
+    }
+    .books-title h2 { 
+        font-size: 60px; 
+    }
+    .books-image img{
+        width: 130%; 
+        margin-top: 35%; 
+    }
+    .video-text h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .video-text span {
+        margin: 0;
+    }
+    .video-images {
+        margin-top: 80px;
+    }
+
+}
+
+@media (max-width: 768px){
+    
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+        z-index: 9;
+    }
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 35px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 37px;
+        z-index: 1;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .banner-text h3{
+        font-size: 20px;
+    }
+    .banner-text h1{
+        font-size: 45px;
+    }
+    .banner-text p{
+        font-size: 18px;
+    }
+    .banner-text h4{
+        font-size: 25px;
+    } 
+
+/*--------About Section---------*/
+
+    .child-about{
+        float: left;
+        margin: 5px;
+    }
+    .about-header{
+        width: 100%;
+    }
+    .about-img{
+        width: 100%;
+    }
+    .about-text{
+        width: 100%;
+        margin: 0;
+        text-align: justify;
+    }
+    .about-header h2{
+        font-size: 55px;
+        transform: none;
+        text-align: center;
+        margin: 10px auto;
+    }
+    .about-text p{
+        margin: 10px auto;
+    } 
+
+/*---------Services Section----------*/
+
+    #service-area{
+        padding: 50px 0;
+    }
+
+    .service-header h2 {
+        font-size: 50px;
+        width: 100%;
+        text-align: center;
+    }
+    .service-header span{
+        margin: 0;
+    }
+    .child-service{
+        width: 100%;
+        margin: 0 auto;
+        text-align: justify;
+    }
+    .service-2, .service-3{
+        margin: 20px auto;
+    }
+
+
+/*----------------Pokasona Section-------------*/
+    .container{
+       padding: 0 25px;
+    }
+    .container .heading{
+        font-size: 50px;
+        padding-top: 45px;
+        padding-bottom: 20px;
+    }
+
+/*---------Books Section---------------*/
+
+    #book {
+        padding: 100px 30px;
+    }
+    .books-title{
+        padding: 30px 0;
+    }
+    .books-title h2 { 
+        font-size: 50px;
+        text-align: center; 
+    }
+    .books-image img{
+        display: none;
+    }
+    .child-book{
+        width: 96%;
+        margin: 2%;
+    }
+    .books-title p{
+        margin: 35px 0;
+        text-align: justify;
+    }
+    .books-title a{
+        margin: 0;
+    }
+
+
+/*-------------Newspaper Start---------------*/
+
+    #newspaper {
+        padding: 20px 0;
+    }
+    .child-newspaper{
+        float: left;
+        width: 100%;
+        margin: 4% 0;
+        text-align: justify;
+    }
+    .newspaper-title h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .newspaper-title span{
+        margin: 0;
+    }
+    .newspaper-images{
+        margin-top: 50px;
+    }
+    .newspaper-item {
+        float: left;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .newspaper-item img{
+        width: 100%;
+    }
+    .child-video{
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+    }
+    .video-text p {
+        margin: 20px auto;
+    }
+    .video-text a {
+        margin: 0;
+    }
+
+/*-------------Footer Start---------------*/
+
+    .footer-title{
+        width: 100%;
+        padding: 10px 40px;
+    }
+    .footer-menu{
+        display: none;
+    }
+     .footer-title h4 {
+        font-size: 22px;
+    }
+    .footer-title h2 {
+        font-size: 50px;
+    }
+    .footer-title p {
+        font-size: 22px;
+        margin-left: 58%;
+    }
+
+    .footer-bottom{
+        padding: 30px 0;
+    }
+    .footer-text{
+        padding-right: 40px;
+    }
+    .footer-text p{
+        font-size: 14px;
+    }
+    .footer-text span{
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .footer-license p{
+        font-size: 14px;
+    }
+    .footer-license span{
+        font-weight: 400;
+        font-size: 12px;
+    }
+    
+}
+
+
+
+
+@media (max-width: 690px) {
+    
+    .banner-text h3{
+        font-size: 12px;    }
+    .banner-text h1{
+        font-size: 20px;
+        margin-left: 25px;
+    }
+    .banner-text p{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .banner-text h4{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    
+}
+
+
